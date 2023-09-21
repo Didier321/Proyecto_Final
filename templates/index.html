@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Prediccion </title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title1" >Prediccion Enfermedad</h1>
+    <form action="/predict" method="post">
+
+      <label for="SepalLengthCm">Fiebre</label>
+
+      <input name="Fiebre" id="Fiebre" required></input>
+      <br><br>
+
+      <label for="SepalWidthCm">Tos</label>
+      <input name="Tos" id="Tos" required></input>
+      <br><br>
+
+      <label for="PetalLengthCm">Dolor de Garganta</label>
+      <input name="Dolor_de_Garganta" id="Dolor_de_Garganta" required></input>
+      <br><br>
+
+      <label for="PetalWidthCm">Congestión Nasal</label>
+      <input name="Congestión_Nasal" id="Congestión_Nasal" required></input>
+      <br><br>
+
+      <label for="PetalWidthCm">Dificultad Respiratoria</label>
+      <input name="Dificultad_Respiratoria" id="Dificultad_Respiratoria" required></input>
+      <br><br>
+
+      <button type="submit">Realizar prediccion</button>
+    </form>
+  </div>
+</body>
+</html>
